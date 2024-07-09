@@ -1,5 +1,3 @@
-<<<<<<< HEAD:README.md
-
 # Full Stack (MERN) Food Delivery Website
 
 I Built a Full Stack (MERN) Food Delivery Website which is functional, responsive and secured using JavaScript, HTML and CSS, Git and
