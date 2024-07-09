@@ -1,0 +1,80 @@
+.login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  z-index: 1;
+  display: grid;
+}
+
+.login_box {
+  width: max(23vw, 330px);
+  color: #808080;
+  background-color: #fff;
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+  border-radius: 8px;
+  padding: 25px 30px;
+  gap: 25px;
+}
+
+.login_title {
+  color: var(--secondary-btn);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login_title_cross {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.login_inputs {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.login_inputs input {
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+}
+
+.login_box button {
+  font-size: 15px;
+  border: none;
+  background-color: var(--primary-btn);
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login_condition {
+  display: flex;
+  gap: 8px;
+  margin-top: -10px;
+  align-items: start;
+}
+
+.login_condition input {
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.login p span {
+  font-weight: 500;
+  color: var(--primary-btn);
+  cursor: pointer;
+}
+
+:global(.fadeIn_animation) {
+  animation: fadeIn 0.5s;
+}

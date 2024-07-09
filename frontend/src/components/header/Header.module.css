@@ -1,0 +1,74 @@
+.header {
+  position: relative;
+  margin: 30px auto;
+  height: 34vw;
+  background: url("/foodHeader.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.header_contents {
+  display: flex;
+  position: absolute;
+  gap: 1.5vw;
+  flex-direction: column;
+  align-items: start;
+  max-width: 50%;
+  left: 6vw;
+  bottom: 10%;
+}
+
+.header_contents h2 {
+  font-size: max(4.5vw, 22px);
+  color: #fff;
+  font-weight: 500;
+}
+
+.header_contents p {
+  font-size: 1.1vw;
+  color: #fff;
+}
+
+.header_contents button {
+  border-radius: 50px;
+  color: var(--background-color);
+  font-weight: 500;
+  border: none;
+  padding: 1vw 2.3vw;
+  background-color: #fff;
+  font-size: max(1.1vw, 13px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header_contents button:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+:global(.fadeIn_animation) {
+  animation: fadeIn 4s;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1050px) {
+  .header_contents {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header_contents {
+    max-width: 65%;
+  }
+
+  .header_contents p {
+    display: none;
+  }
+
+  .header_contents button {
+    padding: 1vw 2.1vw;
+  }
+}

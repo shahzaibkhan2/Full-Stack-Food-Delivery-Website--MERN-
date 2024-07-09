@@ -1,0 +1,177 @@
+.navbar {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.isSticky {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar .logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+.navbar_menu {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  color: var(--primary-btn);
+}
+
+.navbar_menu li {
+  cursor: pointer;
+}
+
+.navbar_right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar_right_icons {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar button {
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 30px;
+  border: 1px solid var(--primary-btn);
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: var(--secondary-btn);
+}
+
+.navbar .active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+.navbar_orders {
+  position: relative;
+}
+
+.navbar_orders .dot {
+  position: absolute;
+  min-height: 10px;
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: var(--primary-btn);
+  right: -8px;
+  top: -8px;
+}
+
+.navbar_profile {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar_profile_dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  cursor: pointer;
+}
+
+.navbar_profile > img {
+  width: 30px;
+}
+
+.navbar_profile:hover .navbar_profile_dropdown {
+  display: flex;
+  gap: 12px;
+  background-color: var(--secondary-btn);
+  flex-direction: column;
+  border-radius: 40px 2px 40px 40px;
+  border: 1px solid var(--secondary-btn);
+  outline: 2px solid #fff;
+  padding: 15px 30px;
+}
+
+.navbar_profile_dropdown li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar_profile_dropdown li:hover {
+  color: var(--primary-btn);
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar_menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .navbar_right {
+    gap: 30px;
+  }
+
+  .navbar_right_icons {
+    width: 22px;
+    height: 22px;
+  }
+
+  .navbar_right button {
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width: 880px) {
+  .navbar .logo {
+    width: 120px;
+  }
+
+  .navbar_menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .navbar_right {
+    gap: 20px;
+  }
+
+  .navbar_right_icons {
+    width: 20px;
+  }
+
+  .navbar_right button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar_menu {
+    display: none;
+  }
+}

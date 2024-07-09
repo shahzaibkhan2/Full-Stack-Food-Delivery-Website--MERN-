@@ -1,0 +1,136 @@
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  gap: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.feedback_form h3 {
+  color: #fff;
+  font-size: max(1.1vw, 16px);
+  margin-bottom: 20px;
+}
+
+.feedback_form h2 {
+  font-weight: 600;
+  font-size: max(2vw, 24px);
+  color: var(--primary-btn);
+  margin-bottom: 50px;
+}
+
+.feedback form input,
+textarea {
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: max(1.1vw, 14px);
+}
+
+.feedback form button {
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 30px;
+  border: 1px solid var(--primary-btn);
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.normal {
+  width: 160px;
+}
+
+.feedback form button:hover {
+  background-color: var(--secondary-btn);
+}
+
+.user {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  place-content: center;
+}
+
+.user_one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.user_one h3 {
+  color: var(--primary-btn);
+  font-size: max(1.4vw, 17px);
+  margin-top: 10px;
+}
+
+.user_one h4 {
+  color: #fff;
+  font-size: max(1.1vw, 15px);
+}
+
+.user_one p {
+  color: var(--secondary-color);
+  font-size: max(01vw, 13px);
+  margin-top: 5px;
+}
+
+.feedback .user_one .social_icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.feedback .user_one .social_icons .social_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #fff;
+  transition: 0.5s;
+  color: var(--primary-btn);
+}
+
+.feedback .user_one .social_icon:hover {
+  color: #fff;
+}
+
+@media (max-width: 933px) {
+  .user {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 677px) {
+  .user {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feedback {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 490px) {
+  .user {
+    grid-template-columns: 1fr;
+  }
+}

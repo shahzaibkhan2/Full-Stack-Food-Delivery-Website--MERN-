@@ -1,0 +1,88 @@
+.footer {
+  background-color: var(--secondary-btn);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 80px;
+  margin-top: 100px;
+  padding: 20px 8.8vw;
+}
+
+.footer_content_left > img {
+  width: 160px;
+  cursor: pointer;
+}
+
+.footer_content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+
+.footer_content_left,
+.footer_content_middle,
+.footer_content_right {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footer_content li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer_social_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.footer_social_icon:hover {
+  color: var(--secondary-btn);
+  background-color: var(--background-color);
+}
+
+.footer_social_icons .footer_social_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.footer hr {
+  margin: 20px 0;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  height: 1px;
+}
+
+:global(.fadeIn_animation) {
+  animation: 0.3s;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 750px) {
+  .footer_content {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+  }
+
+  .footer_copyright {
+    text-align: center;
+  }
+}

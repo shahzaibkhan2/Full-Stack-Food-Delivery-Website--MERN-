@@ -1,0 +1,58 @@
+.add_item {
+  font-size: 16px;
+  width: 70%;
+  color: #fff;
+  margin-top: 50px;
+  margin-left: max(5vw, 25px);
+}
+
+.add_item form {
+  gap: 20px;
+}
+
+.add_item_img_upload label {
+  width: 110px;
+}
+
+.add_item_img_upload img {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.add_item_product_name,
+.add_item_product_description {
+  width: max(40%, 280px);
+}
+
+.add_item_product_name input,
+.add_item_product_description textarea {
+  padding: 10px;
+  resize: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.add_item_category_and_price {
+  display: flex;
+  gap: 30px;
+}
+
+.add_item_category_and_price select,
+.add_item_category_and_price input {
+  padding: 10px;
+  max-width: 120px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.add_item_btn {
+  background-color: var(--primary-btn);
+  color: #fff;
+  border: none;
+  max-width: 120px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
